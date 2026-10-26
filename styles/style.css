@@ -1,5 +1,19 @@
+@font-face{
+    font-family: atkinson-hyperlegible;
+    src: url(../assets/AtkinsonHyperlegibleNext-Medium.otf)
+}
+
+*{
+    font-family: atkinson-hyperlegible;
+}
+
 nav{
     display: flex;
     align-items: center;
     gap: 2em;
 }
+
+span {
+    color: #1F4ED8;
+}
+
