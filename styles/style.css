@@ -5,13 +5,71 @@
 
 *{
     font-family: atkinson-hyperlegible;
+    --dropdown-breakpoint: 500px;
 }
+
+summary{
+    border-radius: 5em;
+    padding: 1em;
+    transition-duration: .2s;
+    &::marker {
+        content: "";
+    }
+
+    &:hover :focus {
+        background-color: #EEE;
+    }
+
+    @media (min-width: 500px) {
+        
+    display: none;
+    }
+}
+
+details{
+    content-visibility: visible;
+}
+
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 500px){
+            justify-content: flex-start;
+        }
+    }
+
+    ::details-content{
+        position: absolute;
+        right: .5em;
+
+        @media (min-width: 500px) {
+            position: static;
+            content-visibility: visible;
+        }
+    }
 
 nav{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #EEE;
+    border: 2px solid #1F4ED8;
+    border-radius: 1em;
+    padding: 1em;
     gap: 2em;
+
+    @media (min-width: 500px) {
+        flex-direction: row;
+        background-color: unset;
+        border: unset;
+    }
 }
+
+
 
 span {
     color: #1F4ED8;
