@@ -51,9 +51,10 @@ nav{
     @media (prefers-reduced-motion: no-preference){
         transition-duration: .2s;
     }
+}
 
-
-  
+nav.menuOpen {
+    translate: 0;
 }
 
 span {
